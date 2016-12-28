@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+body {
+	background-image: url("https://wallpaperscraft.com/image/sushi_sticks_sesame_chinese_cuisine_minimalism_44330_1920x1080.jpg");
+	font-family: tahoma arial times;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 5%;
+	font-size: 55px;
+	opacity: 0.75;
+}
+
+.title {
+	float: right;
+	border-left: solid black 2px;
+	border-bottom: solid black 2px;
+	padding: 3px 10%;
+	position: relative;
+	display: block;
+	font-size: 1.25em;
+}
+
+.chicken {
+	background: salmon;
+}
+
+.beef {
+	background: maroon;
+	color: white;
+}
+
+.sushi {
+	background: beige;
+}
+
+.item {
+	border: 2px solid black;
+	position: relative;
+	display: inline-block;
+	margin: 7% 3%;
+	background: lightgrey;
+	opacity: 0.75;
+}
+
+.item > p {
+	margin: 12% 3% 5% 3%;
+}
+
+@media screen and (min-width: 992px) {
+	.item {
+		width: 27%;
+	}
+
+	.item:hover {
+		opacity: 1;
+		transition: 0.5s;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#long-item {
+		width: 91.5%;
+	}
+
+	#long-item > p {
+		margin: 6% 2% 1% 2%;
+	}
+
+	.item {
+		width: 44%;
+		margin: 5% -1% -2% 4%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.item {
+		margin: 4% 4% 0% 4%;
+		width: 92%;
+	}
+
+	.item > p {
+	margin: 11% 3% 5% 3%;
+	}
+
+	.title {
+		width: 30%;
+		text-align: center;
+		padding: 2px;
+	}
+}
+
